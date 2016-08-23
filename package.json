@@ -1,0 +1,38 @@
+{
+  "name": "zdc-mailer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:unit":"node ./test/unit/index.js",
+    "test:int":"node ./test/integrations/index.js",
+    "test": "npm run test:unit && npm run test:int",
+    "start": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zorro-del-caribe/zdc-mailer.git"
+  },
+  "dependencies": {
+    "ajv": "^4.5.0",
+    "bucanero": "git+https://github.com/zorro-del-caribe/bucanero.git",
+    "bucanero-router": "git+https://github.com/zorro-del-caribe/bucanero-router.git",
+    "debug": "^2.2.0",
+    "email-templates": "^2.4.1",
+    "koa-bodyparser": "^2.2.0",
+    "koa-compress": "^1.0.9",
+    "nodemailer": "^2.5.0",
+    "nodemailer-html-to-text": "^2.1.0",
+    "nodemailer-stub-transport": "^1.1.0",
+    "pug": "^2.0.0-beta5"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zorro-del-caribe/zdc-mailer/issues"
+  },
+  "homepage": "https://github.com/zorro-del-caribe/zdc-mailer#readme",
+  "devDependencies": {
+    "tape": "^4.6.0"
+  }
+}
