@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:unit":"node ./test/unit/index.js",
-    "test:int":"node ./test/integrations/index.js",
-    "test": "npm run test:unit && npm run test:int",
+    "test:unit": "node ./test/unit/index.js",
+    "test:int": "node ./test/integrations/index.js",
+    "test": "npm run test:unit && npm run test:int | tap-spec",
     "start": "node ./index.js"
   },
   "repository": {
@@ -14,7 +14,6 @@
     "url": "git+https://github.com/zorro-del-caribe/zdc-mailer.git"
   },
   "dependencies": {
-    "ajv": "^4.5.0",
     "bucanero": "git+https://github.com/zorro-del-caribe/bucanero.git",
     "bucanero-router": "git+https://github.com/zorro-del-caribe/bucanero-router.git",
     "debug": "^2.2.0",
@@ -23,7 +22,6 @@
     "koa-compress": "^1.0.9",
     "nodemailer": "^2.5.0",
     "nodemailer-html-to-text": "^2.1.0",
-    "nodemailer-stub-transport": "^1.1.0",
     "pug": "^2.0.0-beta5"
   },
   "author": "",
@@ -33,6 +31,9 @@
   },
   "homepage": "https://github.com/zorro-del-caribe/zdc-mailer#readme",
   "devDependencies": {
+    "nodemailer-stub-transport": "^1.1.0",
+    "supertest": "^2.0.0",
+    "tap-spec": "^4.1.1",
     "tape": "^4.6.0"
   }
 }
